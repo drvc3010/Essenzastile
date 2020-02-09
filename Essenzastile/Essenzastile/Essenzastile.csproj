@@ -126,7 +126,6 @@
     <Content Include="category.html" />
     <Content Include="checkout.html" />
     <Content Include="contact-form-handler.php" />
-    <Content Include="Contact.aspx" />
     <Content Include="contact.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -142,7 +141,6 @@
     <Content Include="css\jquery.fancybox.css" />
     <Content Include="css\responsive.css" />
     <Content Include="css\stylesheet.css" />
-    <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="forgetpassword.html" />
@@ -155,15 +153,19 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="image\banners\Main-Banner1.jpg" />
+    <Content Include="image\banners\Main-Banner2.jpg" />
     <Content Include="image\banners\Main-Banner3.jpg" />
     <Content Include="image\banners\Thumbs.db" />
     <Content Include="image\blog\Thumbs.db" />
     <Content Include="image\brand\Thumbs.db" />
     <Content Include="image\flags\Thumbs.db" />
+    <Content Include="image\logo.png" />
     <Content Include="image\payment\Thumbs.db" />
     <Content Include="image\product\Thumbs.db" />
     <Content Include="image\Thumbs.db" />
-    <Content Include="index.html" />
+    <Content Include="Default.aspx" />
+    <Content Include="index__.html" />
     <Content Include="javascript\bootstrap\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="javascript\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="javascript\bootstrap\fonts\glyphicons-halflings-regular.woff" />
@@ -179,8 +181,6 @@
     <Content Include="image\about-us.jpg" />
     <Content Include="image\arrow.png" />
     <Content Include="image\banners\LeftBanner.jpg" />
-    <Content Include="image\banners\Main-Banner1.jpg" />
-    <Content Include="image\banners\Main-Banner2.jpg" />
     <Content Include="image\banners\Main-Banner3__.jpg" />
     <Content Include="image\banners\subbanner1.jpg" />
     <Content Include="image\banners\subbanner2.jpg" />
@@ -205,7 +205,6 @@
     <Content Include="image\gridlist.png" />
     <Content Include="image\left_arrow.png" />
     <Content Include="image\loader.gif" />
-    <Content Include="image\logo.png" />
     <Content Include="image\MakeUp.mp4" />
     <Content Include="image\news.jpg.jpg" />
     <Content Include="image\payment\bank.jpg" />
@@ -329,11 +328,10 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="single-blog.html" />
-    <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
-    <Content Include="Site.Mobile.Master" />
+    <Content Include="MasterPage.Master" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -346,12 +344,8 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -360,23 +354,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.designer.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
