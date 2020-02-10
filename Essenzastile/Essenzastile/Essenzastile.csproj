@@ -153,9 +153,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="image\banners\Main-Banner1.jpg" />
     <Content Include="image\banners\Main-Banner2.jpg" />
+    <Content Include="image\banners\Main-Banner1.jpg" />
     <Content Include="image\banners\Main-Banner3.jpg" />
+    <Content Include="image\banners\subbanner1.jpg" />
     <Content Include="image\banners\Thumbs.db" />
     <Content Include="image\blog\Thumbs.db" />
     <Content Include="image\brand\Thumbs.db" />
@@ -182,7 +183,6 @@
     <Content Include="image\arrow.png" />
     <Content Include="image\banners\LeftBanner.jpg" />
     <Content Include="image\banners\Main-Banner3__.jpg" />
-    <Content Include="image\banners\subbanner1.jpg" />
     <Content Include="image\banners\subbanner2.jpg" />
     <Content Include="image\blog\blog_1.jpg" />
     <Content Include="image\blog\blog_2.jpg" />

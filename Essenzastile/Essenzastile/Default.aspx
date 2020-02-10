@@ -7,7 +7,7 @@
             <div id="main-banner" class="owl-carousel home-slider">
                 <div class="item"> <a href="#"><img src="image/banners/Main-Banner1.jpg" alt="main-banner1" class="img-responsive" /></a> </div>
                 <div class="item"> <a href="#"><img src="image/banners/Main-Banner2.jpg" alt="main-banner2" class="img-responsive" /></a> </div>
-                <div class="item"> <a href="#"><img src="image/banners/Main-Banner3.jpg" alt="main-banner3" class="img-responsive" /></a> </div>
+                <div class="item"> <a href="#"><img src="image/banners/Main-Banner1.jpg" alt="main-banner3" class="img-responsive" /></a> </div>
             </div>
         </div>
         <div class="container">
@@ -17,9 +17,9 @@
                         <div id="subbanner1" class="banner sub-hover">
                             <a href="#"><img src="image/banners/subbanner1.jpg" alt="Sub Banner1" class="img-responsive"></a>
                             <div class="bannertext">
-                                <h2>wonem online</h2>
-                                <p>Shop New Season Clothing</p>
-                                <button class="btn">Shop Now</button>
+                                <h2>Solo mujeres</h2>
+                                <p>Ropa y accesorio solo para mujeres.</p>
+                                <button class="btn">Compra ahora</button>
                             </div>
                         </div>
                     </div>
@@ -27,9 +27,9 @@
                         <div id="subbanner2" class="banner sub-hover">
                             <a href="#"><img src="image/banners/subbanner2.jpg" alt="Sub Banner2" class="img-responsive"></a>
                             <div class="bannertext">
-                                <h2>Accessories </h2>
-                                <p>Get Wide Range Selection</p>
-                                <button class="btn">Shop Now</button>
+                                <h2>Accesorios</h2>
+                                <p>Accesorios de temporada para hombres y mujeres.</p>
+                                <button class="btn">Compra ahora</button>
                             </div>
                         </div>
                     </div>
@@ -1050,7 +1050,7 @@
                                                 <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fa fa-eye"></i></button>
                                             </li>
                                             <li>
-                                                <button type="button" class="addtocart-btn" title="Add to Cart"> Add to Cart </button>
+                                                <button type="button" class="addtocart-btn" title="Add to Cart"> Agregar a carrito </button>
                                             </li>
                                         </ul>
                                     </div>
