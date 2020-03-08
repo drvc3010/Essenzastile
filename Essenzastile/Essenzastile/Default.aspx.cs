@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+﻿using Essenzastile.DataProvider;
+using System;
 
 namespace Essenzastile
 {
@@ -11,7 +7,19 @@ namespace Essenzastile
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack)
+            {
+                ProductoDataProvider productoDataProvider = new ProductoDataProvider();
+                rptProdPortal.DataSource = productoDataProvider.GetAllProducts();
+                rptProdPortal.DataBind();
+            }
+        }
+
+        public string SetPricesProduct(decimal precioProducto )
+        {
+            return "S/ " + precioProducto.ToString();
 
         }
+
     }
 }
