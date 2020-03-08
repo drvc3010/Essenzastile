@@ -67,7 +67,7 @@
                 <div class="row">
                     <div class="content col-sm-12">
                         <div class="customtab">
-                            <h3 class="productblock-title">For Your Best Look</h3>
+                            <h3 class="productblock-title">Los mejores productos para ti...</h3>
                             <div id="tabs" class="customtab-wrapper">
                                 <ul class='customtab-inner'>
                                     <li class='tab'><a href="#tab-furnitur">Popular</a></li>
@@ -88,8 +88,8 @@
                                                 <div class="product-thumb">
                                                     <div class="image product-imageblock">
                                                         <a href="product.html">
-                                                            <img src="image/product/product2.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" />
-                                                            <img src="image/product/product2-2.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" />
+                                                            <img src='<%# Eval("rutaImagen") %>' alt="iPod Classic" title="iPod Classic" class="img-responsive" />
+                                                            <img src='<%# Eval("rutaImagen") %>' alt="iPod Classic" title="iPod Classic" class="img-responsive" />
                                                         </a>
                                                         <ul class="button-group">
                                                             <li>
@@ -102,19 +102,23 @@
 
                                                             </li>
                                                             <li>
-                                                                <button type="button" class="compare" data-toggle="tooltip" data-placement="top" title="Compare this Product"><i class="fa fa-exchange"></i></button>
+
+                                                                <telerik:RadLinkButton NavigateUrl="~/register.html" Icon-CssClass="fa fa-eye" CssClass="quick-view" ID="RadLinkButton2" runat="server">
+                                                                    <ContentTemplate>
+                                                                        <i class="fa fa-eye"></i>
+                                                                    </ContentTemplate>
+                                                                </telerik:RadLinkButton>
                                                             </li>
                                                             <li>
-                                                                <button type="button" class="quick-view" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fa fa-eye"></i></button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button" class="addtocart-btn" title="Add to Cart">Add to Cart</button>
+                                                                <telerik:RadLinkButton NavigateUrl="~/register.html" Text="Agregar al Carro" Style="width: 90%;" CssClass="addtocart-btn" ID="RadLinkButton3" runat="server">
+                                                                </telerik:RadLinkButton>
+
                                                             </li>
                                                         </ul>
                                                     </div>
                                                     <div class="caption product-detail">
                                                         <div class="rating"><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span></div>
-                                                        <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">Casual Shirt With Ruffle Hem</a></h4>
+                                                        <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem"><asp:Label runat ="server" ForeColor="Black"  Font-Bold="true"  Text= '<%# Eval("DescripcionProducto") %>' ></asp:Label></a></h4>
                                                         <p class="price product-price">$122.00<span class="less">$150.00</span><span class="price-tax">Ex Tax: $100.00</span></p>
                                                     </div>
                                                 </div>
@@ -1216,14 +1220,14 @@
             <div class="container">
                 <div class="row">
                     <div class="newslatter">
-                        <form>
-                            <h5>SIGN UP FOR OUR DISCOUNTS TODAY!</h5>
-                            <h4 class="title-subline">Be sure to follow our blog and sign up for all of our mailing updates!</h4>
-                            <div class="input-group">
-                                <input type="text" class=" form-control" placeholder="Your-email@website.com">
-                                <button type="submit" value="Sign up" class="btn btn-large btn-primary">Subscribe</button>
-                            </div>
-                        </form>
+
+                        <h5>SIGN UP FOR OUR DISCOUNTS TODAY!</h5>
+                        <h4 class="title-subline">Be sure to follow our blog and sign up for all of our mailing updates!</h4>
+                        <div class="input-group">
+                            <input type="text" class=" form-control" placeholder="Your-email@website.com">
+                            <button type="submit" value="Sign up" class="btn btn-large btn-primary">Subscribe</button>
+                        </div>
+
                     </div>
                     <div class="footer-social">
                         <ul>
