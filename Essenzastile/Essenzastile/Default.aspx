@@ -44,7 +44,7 @@
                             <div class="bannertext">
                                 <h2>Solo mujeres</h2>
                                 <p>Ropa y accesorio solo para mujeres.</p>
-                                <button class="btn">Compra ahora</button>
+                                <button style="padding:10px; border-radius:8px;"  class="btn-primary">Compra ahora</button>
                             </div>
                         </div>
                     </div>
@@ -54,8 +54,8 @@
                                 <img src="image/banners/subbanner2.jpg" alt="Sub Banner2" class="img-responsive"></a>
                             <div class="bannertext">
                                 <h2>Accesorios</h2>
-                                <p>Accesorios de temporada para hombres y mujeres.</p>
-                                <button class="btn">Compra ahora</button>
+                              <p>Ropa y accesorio solo para mujeres.</p>
+                                <button style="padding:10px; border-radius:8px;"  class="btn-primary">Compra ahora</button>
                             </div>
                         </div>
                     </div>
@@ -118,8 +118,9 @@
                                                     </div>
                                                     <div class="caption product-detail">
                                                         <div class="rating"><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span></div>
-                                                        <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem"><asp:Label runat ="server" ForeColor="Black"  Font-Bold="true"  Text= '<%# Eval("DescripcionProducto") %>' ></asp:Label></a></h4>
-                                                        <p class="price product-price">$122.00<span class="less">$150.00</span><span class="price-tax">Ex Tax: $100.00</span></p>
+                                                        <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">
+                                                            <asp:Label runat="server" ForeColor="Black" Font-Bold="true" Text='<%# Eval("DescripcionProducto") %>'></asp:Label></a></h4>
+                                                        <p class="price product-price"><%#  SetPricesProduct(  Convert.ToDecimal( Eval("PrecioVenta"))) %> <span class="less">$150.00</span><span class="price-tax">Ex Tax: $100.00</span></p>
                                                     </div>
                                                 </div>
                                             </div>

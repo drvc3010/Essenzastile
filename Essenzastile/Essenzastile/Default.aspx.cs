@@ -15,5 +15,11 @@ namespace Essenzastile
             }
         }
 
+        public string SetPricesProduct(decimal precioProducto )
+        {
+            return "S/ " + precioProducto.ToString();
+
+        }
+
     }
 }
