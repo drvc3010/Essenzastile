@@ -96,8 +96,8 @@
                     <div id="cart" class="btn-group btn-block">
                         <button type="button" class="btn btn-inverse btn-block btn-lg dropdown-toggle cart-dropdown-button">
                             <span id="cart-total">
-                                <span>Shopping Cart</span><br>
-                                3 item(s) - $254.00
+                                <span>Carrito de compras</span><br>
+                                0 item(s) - S/ 0.00
                             </span>
                         </button>
                         <ul class="dropdown-menu pull-right cart-dropdown-menu">
@@ -208,7 +208,7 @@
                     </li>--%>
                    <%-- <li><a href="blog.html" class="parent">Blog</a></li>--%>
                     <li><a href="about-us.html">Nosotros</a></li>
-                    <li><a href="contact.html">Cotactanos</a> </li>
+                    <li><a href="contact.html">Contactanos</a> </li>
                 </ul>
             </div>
         </div>

@@ -88,8 +88,8 @@
                                                 <div class="product-thumb">
                                                     <div class="image product-imageblock">
                                                         <a href="product.html">
-                                                            <img src='<%# Eval("rutaImagen") %>' alt="iPod Classic" title="iPod Classic" class="img-responsive" />
-                                                            <img src='<%# Eval("rutaImagen") %>' alt="iPod Classic" title="iPod Classic" class="img-responsive" />
+                                                            <img   src='<%# Eval("rutaImagen") %>' alt="iPod Classic" title="iPod Classic" class="img-responsive" />
+                                                            <img   src='<%# Eval("rutaImagen") %>' alt="iPod Classic" title="iPod Classic" class="img-responsive" />
                                                         </a>
                                                         <ul class="button-group">
                                                             <li>
@@ -120,7 +120,7 @@
                                                         <div class="rating"><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i><i class="fa fa-star fa-stack-2x"></i></span><span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span></div>
                                                         <h4 class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">
                                                             <asp:Label runat="server" ForeColor="Black" Font-Bold="true" Text='<%# Eval("DescripcionProducto") %>'></asp:Label></a></h4>
-                                                        <p class="price product-price"><%#  SetPricesProduct(  Convert.ToDecimal( Eval("PrecioVenta"))) %> <span class="less">$150.00</span><span class="price-tax">Ex Tax: $100.00</span></p>
+                                                        <p class="price product-price"><%#  SetPricesProduct(  Convert.ToDecimal( Eval("PrecioVenta"))) %> <span class="less"><%#  SetPricesProduct(  Convert.ToDecimal( Eval("PrecioVentGen"))) %> </span><span class="price-tax">Ex Tax: $100.00</span></p>
                                                     </div>
                                                 </div>
                                             </div>
